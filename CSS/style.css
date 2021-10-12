@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    border-bottom: 1px #ccc solid;
+    display: flex;
+}
+
+header img{
+    border-radius: 50%;
+    width: 80px;
+    margin: 20px;
+}
+
+.howLate{
+    margin: auto;
+    text-align: center;
+}
+
+.wraper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wraper .img{
+    margin: 1px 0 0 1px;
+    width: 33.1%;
+}
+
+img{
+    max-width: 100%;
+    transition: transform 0.5s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.wraper img{
+    transition: transform 0.5s;
+}
+
+.wraper img:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 769px){
+    .wraper .img{
+        width: 24.8%
+    }
+}
+
+@media screen and (max-width: 500px){
+    header img{
+        width: 50px;
+    }
+}
